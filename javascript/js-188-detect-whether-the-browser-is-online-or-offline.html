@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detect whether the browser is online or offline. | Practical Programs</title>
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<h1>Detect whether the browser is online or offline.</h1><p>Browser Objects and Browser Features Practical Program</p>
+</div></header>
+<main class="container">
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to Browser Objects and Browser Features Programs</a>
+</nav>
+<section class="card">
+<span class="badge">Browser Objects and Browser Features</span>
+<h2>Detect whether the browser is online or offline.</h2>
+<p class="muted">Detect whether the browser is online or offline.</p>
+</section>
+<div class="demo"><div id='status' class='output'>Checking connection...</div><script>function net(){status.textContent=navigator.onLine?'Online':'Offline'}window.addEventListener('online',net);window.addEventListener('offline',net);net()</script></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+
+</body>
+</html>

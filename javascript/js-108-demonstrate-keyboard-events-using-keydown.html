@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demonstrate keyboard events using keydown. | Practical Programs</title>
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<h1>Demonstrate keyboard events using keydown.</h1><p>JavaScript Events Practical Program</p>
+</div></header>
+<main class="container">
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to JavaScript Events Programs</a>
+</nav>
+<section class="card">
+<span class="badge">JavaScript Events</span>
+<h2>Demonstrate keyboard events using keydown.</h2>
+<p class="muted">Demonstrate keyboard events using keydown.</p>
+</section>
+<div class="demo"><input id='keybox' placeholder='Press a key'><div id='out' class='output'>Key: —</div><script>keybox.addEventListener('keydown',e=>out.textContent='Key down: '+e.key);keybox.addEventListener('keyup',e=>out.textContent='Key up: '+e.key)</script></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+
+</body>
+</html>

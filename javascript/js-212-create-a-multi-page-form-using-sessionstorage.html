@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a multi-page form using sessionStorage. | Practical Programs</title>
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<h1>Create a multi-page form using sessionStorage.</h1><p>Web Storage Practical Program</p>
+</div></header>
+<main class="container">
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to Web Storage Programs</a>
+</nav>
+<section class="card">
+<span class="badge">Web Storage</span>
+<h2>Create a multi-page form using sessionStorage.</h2>
+<p class="muted">Create a multi-page form using sessionStorage.</p>
+</section>
+<div class="demo"><input id='data' placeholder='Temporary value'><button onclick="sessionStorage.setItem('sessionData',data.value);out.textContent='Saved for this session.'">Save</button><button onclick="out.textContent=sessionStorage.getItem('sessionData')||'No data'">Read</button><div id='out' class='output'></div></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+
+</body>
+</html>

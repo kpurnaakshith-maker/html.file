@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a countdown timer. | Practical Programs</title>
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<h1>Create a countdown timer.</h1><p>Browser Objects and Browser Features Practical Program</p>
+</div></header>
+<main class="container">
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to Browser Objects and Browser Features Programs</a>
+</nav>
+<section class="card">
+<span class="badge">Browser Objects and Browser Features</span>
+<h2>Create a countdown timer.</h2>
+<p class="muted">Create a countdown timer.</p>
+</section>
+<div class="demo"><input id='seconds' type='number' value='10' min='1'><button onclick="let n=+seconds.value;clearInterval(window.cd);clock.textContent=n;window.cd=setInterval(()=>{n--;clock.textContent=n;if(n<=0){clearInterval(window.cd);clock.textContent='Time up!'}},1000)">Start</button><div id='clock' class='output'></div></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+
+</body>
+</html>

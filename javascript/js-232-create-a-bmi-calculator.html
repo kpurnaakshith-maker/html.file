@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a BMI calculator. | Practical Programs</title>
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<h1>Create a BMI calculator.</h1><p>Mini Projects Practical Program</p>
+</div></header>
+<main class="container">
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to Mini Projects Programs</a>
+</nav>
+<section class="card">
+<span class="badge">Mini Projects</span>
+<h2>Create a BMI calculator.</h2>
+<p class="muted">Create a BMI calculator.</p>
+</section>
+<div class="demo"><input id='calc' readonly style='font-size:1.5rem'><div class='grid-buttons' style='display:grid;grid-template-columns:repeat(4,60px);gap:8px;margin-top:10px'><button onclick="calc.value+='7'">7</button><button onclick="calc.value+='8'">8</button><button onclick="calc.value+='9'">9</button><button onclick="calc.value+='/'">/</button><button onclick="calc.value+='4'">4</button><button onclick="calc.value+='5'">5</button><button onclick="calc.value+='6'">6</button><button onclick="calc.value+='*'">*</button><button onclick="calc.value+='1'">1</button><button onclick="calc.value+='2'">2</button><button onclick="calc.value+='3'">3</button><button onclick="calc.value+='-'">-</button><button onclick="calc.value+='0'">0</button><button onclick="calc.value+='.'">.</button><button onclick="calc.value+='='">=</button><button onclick="calc.value+='+'">+</button></div><script>document.querySelectorAll('.grid-buttons button').forEach(b=>b.addEventListener('click',()=>{if(b.textContent==='='){try{calc.value=Function('return '+calc.value)()}catch{calc.value='Error'}}}))</script></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+
+</body>
+</html>

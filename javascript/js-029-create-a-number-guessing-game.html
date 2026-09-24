@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a number guessing game. | Practical Programs</title>
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<h1>Create a number guessing game.</h1><p>JavaScript Basics Practical Program</p>
+</div></header>
+<main class="container">
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to JavaScript Basics Programs</a>
+</nav>
+<section class="card">
+<span class="badge">JavaScript Basics</span>
+<h2>Create a number guessing game.</h2>
+<p class="muted">Create a number guessing game.</p>
+</section>
+<div class="demo"><input id='guess' type='number' min='1' max='10' value='5'><button onclick="let n=+guess.value;out.textContent=n===secret?'Correct!':'Try again.'">Guess</button><div id='out' class='output'></div><script>const secret=Math.floor(Math.random()*10)+1</script></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+
+</body>
+</html>

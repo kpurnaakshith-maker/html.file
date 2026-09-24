@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display the user&#x27;s current geographical coordinates using the Geolocation API. | Practical Programs</title>
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<h1>Display the user&#x27;s current geographical coordinates using the Geolocation API.</h1><p>Browser Objects and Browser Features Practical Program</p>
+</div></header>
+<main class="container">
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to Browser Objects and Browser Features Programs</a>
+</nav>
+<section class="card">
+<span class="badge">Browser Objects and Browser Features</span>
+<h2>Display the user&#x27;s current geographical coordinates using the Geolocation API.</h2>
+<p class="muted">Display the user&#x27;s current geographical coordinates using the Geolocation API.</p>
+</section>
+<div class="demo"><button onclick="navigator.geolocation?.getCurrentPosition(p=>out.textContent=`Latitude: ${p.coords.latitude}, Longitude: ${p.coords.longitude}`,e=>out.textContent='Location permission was not granted.')">Get Coordinates</button><div id='out' class='output'></div></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+
+</body>
+</html>

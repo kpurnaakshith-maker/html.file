@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store a JavaScript object in localStorage. | Practical Programs</title>
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<h1>Store a JavaScript object in localStorage.</h1><p>Web Storage Practical Program</p>
+</div></header>
+<main class="container">
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to Web Storage Programs</a>
+</nav>
+<section class="card">
+<span class="badge">Web Storage</span>
+<h2>Store a JavaScript object in localStorage.</h2>
+<p class="muted">Store a JavaScript object in localStorage.</p>
+</section>
+<div class="demo"><input id='data' placeholder='Value'><button onclick="localStorage.setItem('practicalData',data.value);out.textContent='Saved!'">Save</button><button onclick="out.textContent=localStorage.getItem('practicalData')||'No data'">Read</button><button onclick="localStorage.removeItem('practicalData');out.textContent='Deleted'">Delete</button><div id='out' class='output'></div></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+
+</body>
+</html>

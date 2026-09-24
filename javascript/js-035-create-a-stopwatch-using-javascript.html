@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a stopwatch using JavaScript. | Practical Programs</title>
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<h1>Create a stopwatch using JavaScript.</h1><p>JavaScript Basics Practical Program</p>
+</div></header>
+<main class="container">
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to JavaScript Basics Programs</a>
+</nav>
+<section class="card">
+<span class="badge">JavaScript Basics</span>
+<h2>Create a stopwatch using JavaScript.</h2>
+<p class="muted">Create a stopwatch using JavaScript.</p>
+</section>
+<div class="demo"><div id='display' style='font-size:2rem'>00:00.0</div><button id='start'>Start</button> <button id='stop'>Stop</button> <button id='reset'>Reset</button><script>let st,ms=0;function render(){let s=Math.floor(ms/1000),d=Math.floor((ms%1000)/100);display.textContent=`${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}.${d}`}start.onclick=()=>{if(!st)st=setInterval(()=>{ms+=100;render()},100)};stop.onclick=()=>{clearInterval(st);st=null};reset.onclick=()=>{clearInterval(st);st=null;ms=0;render()}</script></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+
+</body>
+</html>
